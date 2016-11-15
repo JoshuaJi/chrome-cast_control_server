@@ -20,6 +20,8 @@ app.post('/chromecast', function(req, res){
   				console.log('chromecast is paused');
 			});
 			res.status(200).send();
+		}else{
+			res.status(400).send();
 		}
 	}else{
 		res.status(400).send();
